@@ -1,6 +1,6 @@
 # Análise de custos de serviços em nuvem
 
-Repositório de código e dados reproduzíveis do projeto de comparação de custos entre AWS, Microsoft Azure e Google Cloud. Os documentos acadêmicos do TCC não fazem parte deste repositório.
+Repositório de código e dados reproduzíveis do projeto de comparação de custos entre AWS, Microsoft Azure e Google Cloud entregue como Trabalho de Conclusão de Curso para o MBA em Data Science.
 
 ## Conteúdo
 
@@ -14,10 +14,10 @@ Repositório de código e dados reproduzíveis do projeto de comparação de cus
 python -m pip install -r requirements.txt
 ```
 
-## Segurança
+## Atenção
 
-Não salve chaves de API, tokens ou credenciais em arquivos versionados. Antes de executar a coleta, defina `INFRACOST_API_KEY` no ambiente. O `.gitignore` exclui arquivos `.env` e configurações locais.
+Antes de executar a coleta, defina `INFRACOST_API_KEY` no ambiente. O `.gitignore` exclui arquivos `.env` e configurações locais.
 
 ## Execução
 
-Os scripts aceitam caminhos de entrada e saída por argumentos de linha de comando. Consulte `--help` para as opções de cada etapa. As saídas de coleta e processamento são gravadas localmente e não substituem os arquivos da pasta original do TCC.
+Os scripts aceitam caminhos de entrada e saída por argumentos de linha de comando. Consulte `--help` para as opções de cada etapa. As saídas de coleta e processamento são gravadas localmente e não substituem os arquivos da pasta original.
