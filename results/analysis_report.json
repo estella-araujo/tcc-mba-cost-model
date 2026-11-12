@@ -1,0 +1,9 @@
+{
+  "candidate_rows": 252,
+  "complete_rows": 252,
+  "incomplete_rows": 0,
+  "best_alternatives_rows": 6,
+  "price_coverage_complete": true,
+  "excluded_price_categories": [],
+  "note": "Custos totais só são calculados quando os preços de computação, armazenamento e rede estão configurados."
+}

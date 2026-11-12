@@ -1,0 +1,67 @@
+{
+  "providers": [
+    {
+      "vendor": "aws",
+      "service": "AmazonEC2",
+      "product_family": "Compute Instance",
+      "regions": [
+        "us-east-1",
+        "sa-east-1",
+        "eu-west-1"
+      ],
+      "instance_types": [
+        "t3.medium",
+        "m5.large"
+      ],
+      "attributes": {
+        "operatingSystem": "Linux",
+        "tenancy": "Shared",
+        "capacitystatus": "Used",
+        "preInstalledSw": "NA"
+      },
+      "payment_models": [
+        "on_demand",
+        "spot",
+        "reserved"
+      ]
+    },
+    {
+      "vendor": "azure",
+      "service": "Virtual Machines",
+      "product_family": "Compute",
+      "regions": [
+        "eastus",
+        "brazilsouth",
+        "westeurope"
+      ],
+      "instance_types": [
+        "Standard_B2s",
+        "Standard_D2s_v5"
+      ],
+      "attributes": {},
+      "payment_models": [
+        "Consumption",
+        "Reservation"
+      ]
+    },
+    {
+      "vendor": "gcp",
+      "service": "Compute Engine",
+      "product_family": "Compute Instance",
+      "regions": [
+        "us-east1",
+        "southamerica-east1",
+        "europe-west1"
+      ],
+      "instance_types": [
+        "e2-standard-2",
+        "n2-standard-2"
+      ],
+      "attributes": {},
+      "payment_models": [
+        "on_demand",
+        "preemptible"
+      ]
+    }
+  ]
+}

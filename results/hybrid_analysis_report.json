@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-11-10T00:00:44.142586+00:00",
+  "assumption": "A fração definida de tráfego intercloud é adicional ao tráfego de saída e é tarifada pela taxa de saída do provedor de computação.",
+  "traffic_shares": [
+    0.0,
+    0.1,
+    0.3,
+    0.5,
+    0.8
+  ],
+  "hybrid_rows": 180,
+  "best_rows": 30,
+  "output_files": [
+    "hybrid_candidates.csv",
+    "hybrid_best_by_scenario.csv",
+    "hybrid_sensitivity.csv"
+  ]
+}

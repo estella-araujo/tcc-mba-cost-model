@@ -1,0 +1,2 @@
+﻿workload,scenario,alternative_a,alternative_b,break_even_network_gb_30d,observed_network_gb_30d
+E-commerce de Médio Porte,provisionado,azure / eastus,aws / us-east-1,4353.537591342463,6670.4408

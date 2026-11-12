@@ -1,0 +1,7 @@
+﻿workload,scenario,provider,region,total_cost,compute_cost,database_storage_cost,object_storage_cost,backup_storage_cost,network_cost
+E-commerce de Médio Porte,provisionado,azure,eastus,461.1942679134247,101.34246575342463,51.73275,41.30142016,0.0,266.817632
+E-commerce de Médio Porte,rightsized,azure,eastus,449.933921940822,90.08219178082194,51.73275,41.30142016,0.0,266.81756
+Fintech de Pequeno Porte,provisionado,aws,us-east-1,161.452855,47.80800000000001,37.84075,29.3832,0.0,46.420905000000005
+Fintech de Pequeno Porte,rightsized,aws,us-east-1,137.54887,23.904000000000003,37.84075,29.3832,0.0,46.42092
+Manufatura/Indústria de Médio Porte,provisionado,aws,us-east-1,236.85094,107.568,0.0,0.0,40.221,89.06194
+Manufatura/Indústria de Médio Porte,rightsized,aws,us-east-1,236.850905,107.568,0.0,0.0,40.221,89.06190500000001

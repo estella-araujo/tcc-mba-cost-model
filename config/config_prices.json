@@ -1,0 +1,389 @@
+{
+  "config_version": 2,
+  "resources": [
+    {
+      "resource_category": "compute",
+      "vendor": "aws",
+      "service": "AmazonEC2",
+      "product_family": "Compute Instance",
+      "regions": [
+        "us-east-1",
+        "sa-east-1",
+        "eu-west-1"
+      ],
+      "resources": [
+        {
+          "key": "t3.medium",
+          "attributes": {
+            "instanceType": "t3.medium",
+            "operatingSystem": "Linux",
+            "tenancy": "Shared",
+            "capacitystatus": "Used",
+            "preInstalledSw": "NA"
+          }
+        },
+        {
+          "key": "m5.large",
+          "attributes": {
+            "instanceType": "m5.large",
+            "operatingSystem": "Linux",
+            "tenancy": "Shared",
+            "capacitystatus": "Used",
+            "preInstalledSw": "NA"
+          }
+        }
+      ],
+      "purchase_options": [
+        "on_demand",
+        "reserved",
+        "spot"
+      ]
+    },
+    {
+      "resource_category": "compute",
+      "vendor": "azure",
+      "service": "Virtual Machines",
+      "product_family": "Compute",
+      "regions": [
+        "eastus",
+        "brazilsouth",
+        "westeurope"
+      ],
+      "resources": [
+        {
+          "key": "Standard_B2s",
+          "attributes": {
+            "armSkuName": "Standard_B2s"
+          }
+        },
+        {
+          "key": "Standard_D2s_v5",
+          "attributes": {
+            "armSkuName": "Standard_D2s_v5"
+          }
+        }
+      ],
+      "purchase_options": [
+        "Consumption",
+        "Reservation"
+      ]
+    },
+    {
+      "resource_category": "compute",
+      "vendor": "gcp",
+      "service": "Compute Engine",
+      "product_family": "Compute Instance",
+      "regions": [
+        "us-east1",
+        "southamerica-east1",
+        "europe-west1"
+      ],
+      "resources": [
+        {
+          "key": "e2-standard-2",
+          "attributes": {
+            "machineType": "e2-standard-2"
+          }
+        },
+        {
+          "key": "n2-standard-2",
+          "attributes": {
+            "machineType": "n2-standard-2"
+          }
+        }
+      ],
+      "purchase_options": [
+        "on_demand",
+        "preemptible"
+      ]
+    },
+    {
+      "resource_category": "database_storage",
+      "vendor": "aws",
+      "service": "AmazonRDS",
+      "product_family": "Database Storage",
+      "regions": [
+        "us-east-1",
+        "sa-east-1",
+        "eu-west-1"
+      ],
+      "resources": [
+        {
+          "key": "gp3_single_az",
+          "attributes": {
+            "volumeType": "General Purpose-GP3",
+            "databaseEngine": "Any",
+            "deploymentOption": "Single-AZ"
+          }
+        }
+      ],
+      "purchase_options": [
+        "on_demand"
+      ]
+    },
+    {
+      "resource_category": "object_storage",
+      "vendor": "aws",
+      "service": "AmazonS3",
+      "product_family": "Storage",
+      "regions": [
+        "us-east-1",
+        "sa-east-1",
+        "eu-west-1"
+      ],
+      "resources": [
+        {
+          "key": "standard",
+          "attributes": {
+            "storageClass": "General Purpose"
+          }
+        }
+      ],
+      "purchase_options": [
+        "on_demand"
+      ]
+    },
+    {
+      "resource_category": "backup_storage",
+      "vendor": "aws",
+      "service": "AmazonEC2",
+      "product_family": "Storage",
+      "regions": [
+        "us-east-1",
+        "sa-east-1",
+        "eu-west-1"
+      ],
+      "resources": [
+        {
+          "key": "snapshot",
+          "attributes": {},
+          "attribute_contains_any": [
+            {
+              "usagetype": "Snapshot"
+            },
+            {
+              "volumeType": "Snapshot"
+            },
+            {
+              "description": "Snapshot"
+            }
+          ]
+        }
+      ],
+      "purchase_options": [
+        "on_demand"
+      ]
+    },
+    {
+      "resource_category": "network_egress",
+      "vendor": "aws",
+      "service": "AmazonEC2",
+      "product_family": "Data Transfer",
+      "regions": [
+        "us-east-1",
+        "sa-east-1",
+        "eu-west-1"
+      ],
+      "resources": [
+        {
+          "key": "internet_egress",
+          "attributes": {},
+          "attribute_contains_any": [
+            {
+              "usagetype": "DataTransfer"
+            },
+            {
+              "description": "Data Transfer"
+            }
+          ]
+        }
+      ],
+      "purchase_options": [
+        "on_demand"
+      ]
+    },
+    {
+      "resource_category": "database_storage",
+      "vendor": "azure",
+      "service": "SQL Database",
+      "product_family": "Databases",
+      "regions": [
+        "eastus",
+        "brazilsouth",
+        "westeurope"
+      ],
+      "resources": [
+        {
+          "key": "general_purpose",
+          "attributes": {
+            "meterName": "General Purpose Data Stored"
+          }
+        }
+      ],
+      "purchase_options": [
+        "Consumption"
+      ]
+    },
+    {
+      "resource_category": "object_storage",
+      "vendor": "azure",
+      "service": "Storage",
+      "product_family": "Storage",
+      "regions": [
+        "eastus",
+        "brazilsouth",
+        "westeurope"
+      ],
+      "resources": [
+        {
+          "key": "hot_lrs",
+          "attributes": {
+            "productName": "Blob Storage",
+            "skuName": "Hot LRS",
+            "meterName": "Hot LRS Data Stored"
+          }
+        }
+      ],
+      "purchase_options": [
+        "Consumption"
+      ]
+    },
+    {
+      "resource_category": "backup_storage",
+      "vendor": "azure",
+      "service": "Backup",
+      "product_family": "Storage",
+      "regions": [
+        "eastus",
+        "brazilsouth",
+        "westeurope"
+      ],
+      "resources": [
+        {
+          "key": "azure_vm_grs",
+          "attributes": {
+            "skuName": "Azure VM",
+            "meterName": "GRS Data Stored"
+          }
+        }
+      ],
+      "purchase_options": [
+        "Consumption"
+      ]
+    },
+    {
+      "resource_category": "network_egress",
+      "vendor": "azure",
+      "service": "Bandwidth",
+      "product_family": "Networking",
+      "regions": [
+        "eastus",
+        "brazilsouth",
+        "westeurope"
+      ],
+      "resources": [
+        {
+          "key": "internet_egress",
+          "attributes": {
+            "skuName": "Standard",
+            "meterName": "Standard Data Transfer Out"
+          }
+        }
+      ],
+      "purchase_options": [
+        "Consumption"
+      ]
+    },
+    {
+      "resource_category": "database_storage",
+      "vendor": "gcp",
+      "service": "Cloud SQL",
+      "product_family": null,
+      "regions": [
+        "us-east1",
+        "southamerica-east1",
+        "europe-west1"
+      ],
+      "resources": [
+        {
+          "key": "general",
+          "attributes": {},
+          "attribute_contains": {
+            "description": "storage"
+          }
+        }
+      ],
+      "purchase_options": [
+        "OnDemand"
+      ]
+    },
+    {
+      "resource_category": "object_storage",
+      "vendor": "gcp",
+      "service": "Cloud Storage",
+      "product_family": "Storage",
+      "regions": [
+        "us-east1",
+        "southamerica-east1",
+        "europe-west1"
+      ],
+      "resources": [
+        {
+          "key": "standard",
+          "attributes": {},
+          "attribute_contains": {
+            "description": "Standard Storage"
+          }
+        }
+      ],
+      "purchase_options": [
+        "OnDemand"
+      ]
+    },
+    {
+      "resource_category": "backup_storage",
+      "vendor": "gcp",
+      "service": "Compute Engine",
+      "product_family": "Storage",
+      "regions": [
+        "us-east1",
+        "southamerica-east1",
+        "europe-west1"
+      ],
+      "resources": [
+        {
+          "key": "backup",
+          "attributes": {
+            "resourceGroup": "PDSnapshot"
+          }
+        }
+      ],
+      "purchase_options": [
+        "OnDemand"
+      ]
+    },
+    {
+      "resource_category": "network_egress",
+      "vendor": "gcp",
+      "service": "Compute Engine",
+      "product_family": "Network",
+      "regions": [
+        "us-east1",
+        "southamerica-east1",
+        "europe-west1"
+      ],
+      "resources": [
+        {
+          "key": "internet_egress",
+          "attributes": {},
+          "attribute_contains": {
+            "description": "Internet Data Transfer Out"
+          }
+        }
+      ],
+      "purchase_options": [
+        "OnDemand"
+      ]
+    }
+  ]
+}
